@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     background-color: #e8e8ef;
 }
@@ -49,7 +49,7 @@ button:hover {
     transition: transform 0.2s, opacity 0.2s;
 }
 .btn-delete {
-    background-color: #800852;
+    background-color: #6f062d;
     padding: 5px 10px;
     border: none;
     color: white;
@@ -57,5 +57,5 @@ button:hover {
     cursor: pointer;
 }
 .btn-delete:hover {
-    background-color:   #6f062d;
+    background-color: #800852;
 }
