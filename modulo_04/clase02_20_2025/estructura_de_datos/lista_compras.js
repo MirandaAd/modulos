@@ -1,22 +1,22 @@
 const productos = [];
 function agregarProducto() {
     const input = document.getElementById("producto");
-    const nombreProducto = input.value.trim(); 
-    if (nombreProducto === "") {
+    const producto = input.value.trim(); 
+    if (producto === "") {
         alert("Ingresa el nombre de algún producto.");
         return;
     }
-    if (productos.includes(nombreProducto)) {
+    if (productos.includes(producto)) {
         alert("Este producto ya está en la lista.");
         return;
     }
-    productos.push(nombreProducto);
+    productos.push(producto);
     mostrarLista();
     input.value = "";
 }
 
-function eliminarProducto(nombreProducto) {
-    const index = productos.indexOf(nombreProducto);
+function eliminarProducto(producto) {
+    const index = productos.indexOf(producto);
     if (index !== -1) { 
         productos.splice(index, 1); 
         mostrarLista();
