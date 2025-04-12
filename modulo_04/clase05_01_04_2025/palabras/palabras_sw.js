@@ -1,5 +1,5 @@
 function findLongestWord(frase) {
-    let words = frase.split(" ");
+    const words = frase.split(" ");
     let longestWord = words[0];
     for (let i = 0; i < words.length; i++) {
         if (words[i].length > longestWord.length) {
