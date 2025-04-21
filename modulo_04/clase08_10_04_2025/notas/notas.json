@@ -1,0 +1,11 @@
+{
+  "name": "notas",
+  "version": "1.0.0",
+  "main": "gestorNotas.js",
+  "scripts": {
+    "test": "node gestorNotas.js"
+  },
+  "author": "Adolfo Miranda",
+  "license": "ISC",
+  "description": ""
+}
