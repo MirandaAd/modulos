@@ -11,14 +11,16 @@ fetchBtn.addEventListener('click', () => {
       return response.json();
     })
     .then(data => {
-      // Completar: renderizar datos en el contenedor
+      // Renderizar datos en el contenedor
       // Pista: Usa `data.results` para iterar sobre los personajes obtenidos.
+      renderCharacters(data.results);
     })
     .catch(error => {
       console.error('Error:', error);
       dataContainer.textContent = 'Hubo un error al obtener los datos.';
     });
 });
+
 
 // Implementa las Solicitudes con Axios
 
@@ -32,8 +34,9 @@ axiosBtn.addEventListener('click', () => {
   axios.get('https://rickandmortyapi.com/api/character')
     .then(response => {
       const data = response.data;
-      // Completar: renderizar datos en el contenedor
+      // Renderizar datos en el contenedor
       // Pista: Observa que Axios ya convierte la respuesta JSON, por lo que no necesitas usar `.json()`.
+      renderCharacters(data.results);
     })
     .catch(error => {
       console.error('Error:', error);
@@ -42,15 +45,16 @@ axiosBtn.addEventListener('click', () => {
 });
 
 // Ejemplo de función de renderizado:
-// Puedes adecuar este código
 function renderCharacters(characters) {
   dataContainer.innerHTML = '';
   characters.forEach(character => {
     const characterElement = document.createElement('div');
     characterElement.innerHTML = `
-      <h3>${character.name}</h3>
+      <h2>${character.name}</h2>
+      <h3>${character.species}<h3>
       <img src="${character.image}" alt="${character.name}">
     `;
     dataContainer.appendChild(characterElement);
   });
 }
+
