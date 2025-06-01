@@ -3,6 +3,8 @@ const BASE_URL_API = "https://pokeapi.co/api/v2";
 const formNombre = document.querySelector('#searchForm');
 const salida = document.querySelector('#output')
 
+// Validación con Zod
+
 const { z } = window.Zod;
 
 const nombreSchema = z.string()
@@ -63,6 +65,12 @@ formNombre.addEventListener('submit', async (event) => {
             saveHistory(nombre.value)
             console.log(pokemonData)
             salida.innerHTML = buildPokemonCard(pokemonData)
+
+            document.body.style.backgroundImage = `url(${pokemonData.sprites.front_default})`;
+            document.body.style.backgroundSize = "contain";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundColor = "#f0f0f0"; 
         } catch (err) {
             salida.innerHTML = `<p id=errorMsg>El pokemon no se encuentra! (${err.message})</p>`
         } finally {
@@ -75,6 +83,7 @@ formNombre.addEventListener('submit', async (event) => {
 const showLoader = () => document.querySelector("#loader").classList.remove('hidden')
 
 const hideLoader = () => document.querySelector("#loader").classList.add('hidden')
+
 
 /* ##### historial ###### */
 
