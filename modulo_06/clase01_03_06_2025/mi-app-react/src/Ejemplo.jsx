@@ -13,7 +13,6 @@ function Ejemplo (props) {
           <p id = {item}>Elemento número {item}</p>
         ))
       }
-      <Tarjeta titulo =  {"Mi primera tarjeta"} descripcion = {"Esta es mi primera tarjeta Dummy"}/> 
     </>
   )
 }
