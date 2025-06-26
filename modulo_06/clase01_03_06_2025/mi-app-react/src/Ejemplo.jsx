@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Tarjeta from './components/tarjeta'
+
 
 function Ejemplo (props) {
   const [count, setCount] = useState(0)
