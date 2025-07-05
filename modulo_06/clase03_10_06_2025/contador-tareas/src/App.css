@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-content: center;
+  background: hsl(217, 57%, 88%);
+  color: #103049;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+}
