@@ -29,9 +29,9 @@ export default function Post({ post }) {
       </div>
       <p>{post.text}</p>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px', fontSize: '14px' }}>
-        <span onClick={() => setViews(views + 1)} style={{ cursor: 'pointer' }}>👀 {views} views</span>
+        <span onClick={() => setViews(views + 1)} style={{ cursor: 'pointer' }}> {views} views</span>
         <span onClick={() => setComments(comments + 1)} style={{ cursor: 'pointer' }}>💬 {comments}</span>
-        <span onClick={() => setLikes(likes + 1)} style={{ cursor: 'pointer' }}>❤️ {likes}</span>
+        <span onClick={() => setLikes(likes + 1)} style={{ cursor: 'pointer' }}>👍 {likes}</span>
         <span onClick={() => setShares(shares + 1)} style={{ cursor: 'pointer' }}>🔗 {shares}</span>
       </div>
 
