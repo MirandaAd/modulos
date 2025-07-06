@@ -24,7 +24,19 @@ function App() {
       comments: 5,
       likes: 8,
       shares: 8
+    },
+    {
+      name: "Ana Pérez",
+      username: "@AnaPz",
+      avatar: "https://www.dzoom.org.es/wp-content/uploads/2020/02/portada-foto-perfil-redes-sociales-consejos-810x540.jpg",
+      date: "Jul 5, 2025 - 02:30 PM",
+      text: "Publicación de prueba :D",
+      views: 1,
+      comments: 2,
+      likes: 1,
+      shares: 1
     }
+
   ];
 
   return (
