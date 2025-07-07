@@ -43,7 +43,7 @@ function Game() {
 
   return (
     <section className="game">
-      <h1>Juego de Adivinar el Número</h1>
+      <h1>Adivina el Número</h1>
 
       <InputNumber
         value={guess}
